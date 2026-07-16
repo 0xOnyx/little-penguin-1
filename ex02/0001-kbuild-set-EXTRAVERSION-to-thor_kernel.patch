@@ -1,0 +1,26 @@
+From 48949ee091d61d92dd4f31315859fa394d246d9a Mon Sep 17 00:00:00 2001
+From: root <root@vm.vm>
+Date: Wed, 27 May 2026 07:58:21 -0400
+Subject: [PATCH] kbuild: set EXTRAVERSION to -thor_kernel
+
+Signed-off-by: root <root@vm.vm>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 9f59598d3..e6c4ee6c3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 7
+ PATCHLEVEL = 1
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc4
++EXTRAVERSION = -thor_kernel
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.47.3
+
