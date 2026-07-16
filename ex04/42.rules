@@ -1,0 +1,2 @@
+# /etc/udev/rules.d/42.rules
+ACTION=="add", SUBSYSTEM=="usb", ATTR{bInterfaceProtocol}=="01", RUN+="/sbin/modprobe main"
