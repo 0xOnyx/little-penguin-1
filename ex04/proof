@@ -1,0 +1,16 @@
+root@onyx:/home/onyx/Documents/little-penguin-1/ex04# dmesg | tail -5
+                  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[2500743.273810] audit: type=1107 audit(1785947405.687:1411): pid=663 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.4" pid=2248 label="snap.firefox.firefox" peer_pid=668 peer_label="unconfined"
+                  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[2500803.354488] audit: type=1107 audit(1785947465.770:1412): pid=663 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.4" pid=2248 label="snap.firefox.firefox" peer_pid=668 peer_label="unconfined"
+                  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+root@onyx:/home/onyx/Documents/little-penguin-1/ex04# lsmod | grep main
+root@onyx:/home/onyx/Documents/little-penguin-1/ex04# lsmod | grep main
+main                   12288  0
+root@onyx:/home/onyx/Documents/little-penguin-1/ex04# dmesg | tail -5
+[2500907.247470] input: HS-HW186-3C-US-01-01-   Satechi wired keyboard Mouse as /devices/pci0000:00/0000:00:14.0/usb3/3-7/3-7:1.1/0003:1C4F:0063.0007/input/input35
+[2500907.247944] hid-generic 0003:1C4F:0063.0007: input,hidraw2: USB HID v1.10 Mouse [HS-HW186-3C-US-01-01-   Satechi wired keyboard] on usb-0000:00:14.0-7/input1
+[2500907.267859] main: loading out-of-tree module taints kernel.
+[2500907.267868] main: module verification failed: signature and/or required key missing - tainting kernel
+[2500907.269049] Keyboard plugged in!
+root@onyx:/home/onyx/Documents/little-penguin-1/ex04# dmesg | tail -5
